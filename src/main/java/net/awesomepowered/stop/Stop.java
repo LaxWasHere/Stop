@@ -24,7 +24,7 @@ public class Stop extends JavaPlugin implements Listener {
     }
 
     public void onCommand(PlayerCommandPreprocessEvent ev) {
-        if (ev.getMessage().equalsIgnoreCase("/stop") && !isGo) {
+        if (ev.getMessage().toLowerCase().startsWith("/stop") && !isGo) {
             ev.getPlayer().sendMessage(ChatColor.RED + "The server cannot be stopped yet!");
             ev.setCancelled(true);
             return;
