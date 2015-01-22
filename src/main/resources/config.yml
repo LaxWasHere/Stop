@@ -1,0 +1,5 @@
+#StopTime in minutes
+StopTime: 10
+Commands:
+    - 'eco give %PLAYER% 100'
+    - 'give %PLAYER% apple 1'
